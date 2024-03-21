@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SV19T1021242.DataLayers\SV19T1021242.DataLayers.csproj" />
+    <ProjectReference Include="..\SV19T1021242.DomainModels\SV19T1021242.DomainModels.csproj" />
+  </ItemGroup>
+</Project>

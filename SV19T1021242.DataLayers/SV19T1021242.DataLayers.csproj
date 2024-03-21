@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.15" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SV19T1021242.DomainModels\SV19T1021242.DomainModels.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="SQLServer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQLServer\" />
+  </ItemGroup>
+</Project>

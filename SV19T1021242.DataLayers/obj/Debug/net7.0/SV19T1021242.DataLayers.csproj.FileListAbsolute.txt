@@ -1,0 +1,15 @@
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/bin/Debug/net7.0/SV19T1021242.DataLayers.deps.json
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/bin/Debug/net7.0/SV19T1021242.DataLayers.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/bin/Debug/net7.0/SV19T1021242.DataLayers.pdb
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/bin/Debug/net7.0/SV19T1021242.DomainModels.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/bin/Debug/net7.0/SV19T1021242.DomainModels.pdb
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.csproj.AssemblyReference.cache
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.AssemblyInfoInputs.cache
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.AssemblyInfo.cs
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.csproj.CoreCompileInputs.cache
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.csproj.CopyComplete
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/refint/SV19T1021242.DataLayers.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/SV19T1021242.DataLayers.pdb
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/Debug/net7.0/ref/SV19T1021242.DataLayers.dll

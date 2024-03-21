@@ -1,0 +1,59 @@
+﻿@model ShipperSearchResult 
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+<p style="margin:10px 0 0">
+    Có <strong>@Model.RowCount</strong> người giao hàng trong tổng số <strong>@Model.PageCount</strong> trang
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr class="bg-primary">
+                <th>Tên người giao hàng</th>
+                <th>Điện thoại</th>
+                <th style="width:80px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.data)
+            {
+                <tr>
+                    <td>@item.ShipperName</td>
+                    <td>@item.Phone</td>
+                    <td class="text-right">
+                        <a href="~/Shipper/Edit/@item.ShipperId" class="btn btn-xs btn-info">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        <a href="~/Shipper/Delete/@item.ShipperId" class="btn btn-xs btn-danger">
+                            <i class="fa fa-remove"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="text-center">
+    <ul class="pagination">
+        @if (Model.PageCount > 1)
+        {
+            @for (int p = 1; p <= Model.PageCount; p++)
+            {
+                if (p == Model.Page)
+                {
+                    <li class="active"><a href="#">@p</a></li>
+                }
+                else
+                {
+                    <li><a href="javascript:;" onclick="doSearch('#formSearch', @p)">@p</a></li>
+                }
+            }
+        }
+
+    </ul>
+</div>

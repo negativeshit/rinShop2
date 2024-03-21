@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.Web/SV19T1021242.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/SV19T1021242.BusinessLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/SV19T1021242.BusinessLayers.csproj",
+        "projectName": "SV19T1021242.BusinessLayers",
+        "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/SV19T1021242.BusinessLayers.csproj",
+        "packagesPath": "/Users/nguyenhuuthanh/.nuget/packages/",
+        "outputPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenhuuthanh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/SV19T1021242.DataLayers.csproj": {
+                "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/SV19T1021242.DataLayers.csproj"
+              },
+              "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj": {
+                "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/SV19T1021242.DataLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/SV19T1021242.DataLayers.csproj",
+        "projectName": "SV19T1021242.DataLayers",
+        "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/SV19T1021242.DataLayers.csproj",
+        "packagesPath": "/Users/nguyenhuuthanh/.nuget/packages/",
+        "outputPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenhuuthanh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj": {
+                "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.15, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj",
+        "projectName": "SV19T1021242.DomainModels",
+        "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj",
+        "packagesPath": "/Users/nguyenhuuthanh/.nuget/packages/",
+        "outputPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenhuuthanh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.Web/SV19T1021242.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.Web/SV19T1021242.Web.csproj",
+        "projectName": "SV19T1021242.Web",
+        "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.Web/SV19T1021242.Web.csproj",
+        "packagesPath": "/Users/nguyenhuuthanh/.nuget/packages/",
+        "outputPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenhuuthanh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.309/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/SV19T1021242.BusinessLayers.csproj": {
+                "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/SV19T1021242.BusinessLayers.csproj"
+              },
+              "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/SV19T1021242.DataLayers.csproj": {
+                "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DataLayers/SV19T1021242.DataLayers.csproj"
+              },
+              "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj": {
+                "projectPath": "/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.DomainModels/SV19T1021242.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/bin/Debug/net7.0/SV19T1021242.BusinessLayers.deps.json
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/bin/Debug/net7.0/SV19T1021242.BusinessLayers.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/bin/Debug/net7.0/SV19T1021242.BusinessLayers.pdb
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/bin/Debug/net7.0/SV19T1021242.DataLayers.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/bin/Debug/net7.0/SV19T1021242.DomainModels.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/bin/Debug/net7.0/SV19T1021242.DataLayers.pdb
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/bin/Debug/net7.0/SV19T1021242.DomainModels.pdb
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.csproj.AssemblyReference.cache
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.AssemblyInfoInputs.cache
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.AssemblyInfo.cs
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.csproj.CoreCompileInputs.cache
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.csproj.CopyComplete
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/refint/SV19T1021242.BusinessLayers.dll
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/SV19T1021242.BusinessLayers.pdb
+/Users/nguyenhuuthanh/Projects/SV19T1021242/SV19T1021242.BusinessLayers/obj/Debug/net7.0/ref/SV19T1021242.BusinessLayers.dll

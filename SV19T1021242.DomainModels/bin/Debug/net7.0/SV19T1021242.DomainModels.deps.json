@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SV19T1021242.DomainModels/1.0.0": {
+        "runtime": {
+          "SV19T1021242.DomainModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SV19T1021242.DomainModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
