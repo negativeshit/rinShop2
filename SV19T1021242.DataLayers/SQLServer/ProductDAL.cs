@@ -199,22 +199,26 @@ namespace SV19T1021242.DataLayers.SQLServer
             return data;
         }
 
-        public ProductPhoto? GetPhoto(long PhotoId)
+        public ProductPhoto? GetPhoto(long PhotoID)
         {
             ProductPhoto? data = null;
+
             using (var connection = OpenConnection())
             {
-                var sql = @"select * from ProductPhoto where PhotoId = @PhotoId";
+                var sql = @"select * from ProductPhotos where PhotoID = @PhotoID";
+
                 var parameters = new
                 {
-                    PhotoId = PhotoId
+                    PhotoID = PhotoID
                 };
+
                 data = connection.QueryFirstOrDefault<ProductPhoto>(sql: sql, param: parameters, commandType: System.Data.CommandType.Text);
                 connection.Close();
             }
             return data;
         }
-            public bool IsUsed(int ProductId)
+
+        public bool IsUsed(int ProductId)
         {
             bool result = false;
             using (var connection = OpenConnection())
@@ -369,28 +373,30 @@ Where AttributeID  = @AttributeID";
         public bool UpdatePhoto(ProductPhoto data)
         {
             bool result = false;
+
             using (var connection = OpenConnection())
             {
+                var sql = @"UPDATE ProductPhotos
+                            SET Photo = @Photo,
+                                Description = @Description,
+                                DisplayOrder = @DisplayOrder,
+                                IsHidden = @IsHidden
+                            WHERE PhotoID = @PhotoID";
 
-                var sql = @" Update ProductPhotos
-set 
-    PhotoID = data.PhotoID,
-    Photo= @Photo,
-    Description = @Description,
-    DisplayOrder = @DisplayOrder,
-IsHidden = @IsHidden
-Where ProductID = @ProductID";
                 var parameters = new
-                {   PhotoID = data.PhotoID,
+                {
+                    PhotoID = data.PhotoID,
                     ProductID = data.ProductID,
-                    Photo = data.Photo ?? "",
+                    Photo = data.Photo,
+                    Description = data.Description,
                     DisplayOrder = data.DisplayOrder,
-                    Description = data.Description ?? "",
-                    IsHidden = data.IsHidden,
+                    IsHidden = data.IsHidden
                 };
+
                 result = connection.Execute(sql: sql, param: parameters, commandType: System.Data.CommandType.Text) > 0;
                 connection.Close();
             }
+
             return result;
         }
     }

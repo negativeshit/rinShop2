@@ -73,15 +73,17 @@ namespace SV19T1021242.Web.Controllers
         }
         public IActionResult Edit(int id)
         {
-            ViewBag.Title = "Chỉnh sửa thông tin hàng hoá";
-            
+            ViewBag.Title = "Cập nhật thông tin mặt hàng";
+            ViewBag.IsEdit = true;
             Product? model = ProductDataService.GetProduct(id);
+            ViewBag.photos = ProductDataService.ListPhotos(id);
+            ViewBag.attributes = ProductDataService.ListAttributes(id);
             if (model == null)
+            {
                 return RedirectToAction("Index");
-
+            }
             return View(model);
         }
-        
         public IActionResult Delete(int id)
         {
             if (Request.Method == "POST")
@@ -99,33 +101,38 @@ namespace SV19T1021242.Web.Controllers
             return View(model);
 
         }
-        public IActionResult Photo(int id, string method,int photoId = 0) 
+        public IActionResult Photo(int id, string method, int photoID = 0)
         {
-           
+
             ProductPhoto? model = new ProductPhoto();
             switch (method)
             {
                 case "add":
-                    
+
                     ViewBag.Title = "Bổ sung ảnh";
                     model = new ProductPhoto()
                     {
                         PhotoID = 0,
                         ProductID = id
                     };
-                    return View(model);
+                    break;
                 case "edit":
-                    model = ProductDataService.GetPhoto(photoId);
+                    ViewBag.Title = " Thay đổi ảnh";
+                    model = ProductDataService.GetPhoto(Convert.ToInt64(photoID));
+                    
                     if (model == null)
                         return RedirectToAction("Edit", new { id = id });
+                    break;
 
-                    return View(model);
                 case "delete":
-                    ProductDataService.DeletePhoto(photoId);
+                    // Todo: Xóa ảnh (xóa ảnh trực tiếp, không cần confirm)
+                    ProductDataService.DeletePhoto(Convert.ToInt64(photoID));
+
                     return RedirectToAction("Edit", new { id = id });
                 default:
                     return RedirectToAction("Index");
             }
+            return View(model);
         }
         public IActionResult Attribute(int id, string method, int attributeId = 0)
         {
@@ -216,11 +223,12 @@ namespace SV19T1021242.Web.Controllers
         [HttpPost]
         public IActionResult SavePhoto(ProductPhoto data, IFormFile uploadPhoto)
         {
+
             //Xử lý ảnh upload
             if (uploadPhoto != null)
             {
                 string filename = $"{DateTime.Now.Ticks}_{uploadPhoto.FileName}";
-                string folder = Path.Combine(ApplicationContext.HostEnviroment.WebRootPath, @"images/products");
+                string folder = Path.Combine(ApplicationContext.HostEnviroment.WebRootPath, "images\\products");
                 string filePath = Path.Combine(folder, filename);// Đương dẫn đến file cần lưu
 
                 using (var stream = new FileStream(filePath, FileMode.Create))
@@ -243,24 +251,23 @@ namespace SV19T1021242.Web.Controllers
                 ModelState.AddModelError("DisplayOrder", "Thứ tự không được để trống");
             }
 
-            
             if (!ModelState.IsValid)
             {
                 return View("Photo", data);
             }
             if (data.PhotoID == 0)
             {
-                ProductDataService.AddPhoto(data);
-               
+
+                long id = ProductDataService.AddPhoto(data);
             }
             else
             {
-                ProductDataService.UpdatePhoto(data);
-
+               
+                bool result = ProductDataService.UpdatePhoto(data);
             }
-
-            return RedirectToAction("Edit", new { productID = data.ProductID });
+            return RedirectToAction("Edit", new { id = data.ProductID });
         }
+
         [HttpPost]
         public IActionResult SaveAttribute(ProductAttribute? model)
         {
@@ -286,17 +293,13 @@ namespace SV19T1021242.Web.Controllers
             if (model.AttributeID == 0)
             {
 
-                ProductDataService.AddAttribute(model);
-                return View("Edit", model);
-
+                long id = ProductDataService.AddAttribute(model);
             }
             else
             {
-                ProductDataService.UpdateAttribute(model);
-                return RedirectToAction("Edit", new { productID = model.ProductID });
+                bool result = ProductDataService.UpdateAttribute(model);
             }
-           
-
+            return RedirectToAction("Edit", new { id = model.ProductID });
 
         }
 

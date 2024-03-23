@@ -98,7 +98,7 @@ namespace SV19T1021242.Web.Controllers
             if(uploadPhoto != null)
             {
                 string fileName = $"{DateTime.Now.Ticks}_{uploadPhoto.FileName}";
-                string folder = Path.Combine(ApplicationContext.HostEnviroment.WebRootPath, @"images/employees");
+                string folder = Path.Combine(ApplicationContext.HostEnviroment.WebRootPath, @"images\\employees");
                 string filepath = Path.Combine(folder, fileName);
                 using (var stream = new FileStream(filepath, FileMode.Create))
                 {

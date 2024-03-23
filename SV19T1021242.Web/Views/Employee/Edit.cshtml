@@ -48,14 +48,10 @@
             <div class="form-group">
                 <label class="control-label col-sm-2">Trạng thái:</label>
                 <div class="col-sm-10">
-                    @if (@Model.IsWorking)
-                    {
-                        <label>
-                            <input type="checkbox" name="IsWorking" value="true" checked /> Nhân viên đang làm việc
-                        </label>
-                    }
-
-
+                    @Html.CheckBoxFor(m => m.IsWorking)
+                    <label class="form-check-label">
+                        Nhân viên đang làm việc
+                    </label>
                 </div>
             </div>
 

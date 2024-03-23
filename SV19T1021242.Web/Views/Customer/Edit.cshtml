@@ -46,35 +46,26 @@
 
             <div class="form-group">
                 <label>Trạng thái:</label>
-                <select class="form-control" name="isLocked">
-                    <!-- Nên dùng check box -->
-                    @if (Model.IsLocked)
-                    {
-                        <option value="true" selected> Tài khoản bị khóa</option>
-                        <option value="false">Tài khoản không bị khóa</option>
-                    }
-                    else
-                    {
-                        <option value="true"> Tài khoản bị khóa</option>
-                        <option value="false" selected>Tài khoản không bị khóa</option>
-                    }
+                <div class="form-check">
+                    @Html.CheckBoxFor(m => m.IsLocked)
+                    <lable class="form-check-label">
+                        Tài khoản bị khóa
+                    </lable>
+                </div>
+                <div class="form-group">
+                    @Html.ValidationMessage("Error", new { @style = "color:#f00" })
+                </div>
 
-                </select>
-            </div>
-            <div class="form-group">
-                @Html.ValidationMessage("Error", new { @style = "color:#f00" })
-            </div>
-
-            <div class="form-group text-right">
-                <button type="submit" class="btn btn-primary">
-                    <i class="fa fa-floppy"></i>
-                    Lưu dữ liệu
-                </button>
-                <a href="~/Customer" class="btn btn-default">
-                    Quay lại
-                </a>
-            </div>
-        </form>
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-floppy"></i>
+                        Lưu dữ liệu
+                    </button>
+                    <a href="~/Customer" class="btn btn-default">
+                        Quay lại
+                    </a>
+                </div>
+</form>
 
     </div>
 
